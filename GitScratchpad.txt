@@ -1,0 +1,4 @@
+Git configurations can be stored at
+1) System level ()
+2) User Level (<user_home E.g. C:\Users\sinarn>/.gitconfig)
+3) Project level (<project>/.git/config)
