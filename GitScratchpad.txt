@@ -28,7 +28,9 @@ git rm <<file name>>		==> Removing the file
 git mv <<old_file>> <<new_file>> ==> Moving/Renaming file
 
 git checkout -- aa.html        ==> For overwriting a file in working repository. Double hyphen indicates use current branch
+git checkout <<SHA_1>> -- <<file name>> ==> Overwriting a file in working repository with a specific commit. SHA_1 is the commit if of that
 
-git commit -amend <<file name>>
+git commit -amend <<file name>>	==> To amend to the last commit. Ammendment can even be for changing the commit message
 
-AMMENDED
+git revert <<SHA_1>> 	==> To revert the branch to an older commit
+
