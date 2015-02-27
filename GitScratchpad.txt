@@ -3,3 +3,32 @@ Git configurations can be stored at
 2) User Level (<user_home E.g. C:\Users\sinarn>/.gitconfig)
 3) Project level (<project>/.git/config)
 
+
+
+git status			==> To know the differences between working dir and repository
+					This gives an overview of files that are different.
+
+git add .
+
+git commit -m "message"
+
+git log 
+git log -n 3 			==> To see the last 3 commits
+git log --since 2012-06-15	==> To see the since that date
+git log --until 2012-06-15	==> To see the until that date
+git log --author "Arafat"	==> To see the commits only of this author
+git log --grep "Init"		==> Regex filtered logs
+
+
+git diff			==> Seeing the differences between workspace and Repo
+git diff --staged		==> Seeing the differences between staged and Repo
+
+git rm <<file name>>		==> Removing the file
+
+git mv <<old_file>> <<new_file>> ==> Moving/Renaming file
+
+git checkout -- aa.html        ==> For overwriting a file in working repository. Double hyphen indicates use current branch
+
+git commit -amend <<file name>>
+
+AMMENDED
