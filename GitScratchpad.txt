@@ -34,3 +34,13 @@ git commit -amend <<file name>>	==> To amend to the last commit. Ammendment can 
 
 git revert <<SHA_1>> 	==> To revert the branch to an older commit
 
+git reset		==> For resetting the head pointer and/or resest the staging dire and/or resetting the working dir
+				Always changes the HEAD pointer. And there are 3 options as follows
+				Soft: moves HEAD pointer to specified commit, and doesnt change the staging index or the working directory
+				Mixed (default): moves HEAD pointer to specified commit, and it also changes the staging index to match the repository. It does not change the working directory
+				Hard : moves HEAD pointer to specified commit, and it also changes the staging index and working dir to match that commit. So all changes in working directory are lost
+
+
+
+Question:
+Whats the diff between checkout and reset
